@@ -26,12 +26,8 @@
     "test": {
       "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
     },
-    "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
-    },
-    "e2e": {
-      "inputs": ["default", "^production"]
-    },
+    "lint": { "inputs": ["default", "{workspaceRoot}/.eslintrc.json"] },
+    "e2e": { "inputs": ["default", "^production"] },
     "stylelint": {
       "inputs": [
         "default",
@@ -60,7 +56,7 @@
           "stylelint",
           "build-storybook"
         ],
-        "accessToken": "Mjg5N2RhOGEtM2Y3My00ODJiLThlMzEtN2I1MTg1NmI3OTRhfHJlYWQ="
+        "accessToken": "MjZjNDMyNmEtNmZlMC00ZmZlLWE4MTctMGFlN2ZhODY3YWM2fHJlYWQtd3JpdGU="
       }
     }
   },
@@ -71,12 +67,7 @@
       "unitTestRunner": "jest",
       "e2eTestRunner": "cypress"
     },
-    "@nx/angular:library": {
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nx/angular:component": {
-      "style": "scss"
-    }
+    "@nx/angular:library": { "linter": "eslint", "unitTestRunner": "jest" },
+    "@nx/angular:component": { "style": "scss" }
   }
 }
